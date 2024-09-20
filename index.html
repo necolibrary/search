@@ -7,10 +7,10 @@
   .eb-search-container>*{flex:1 100%;padding:12px}
   .eb-search-container__title{font-weight:400;font-size:1.5em;letter-spacing:-.05em;font-family: Arial, Helvetica, sans-serif;text-align:center}
   .eb-search__box>*{flex:1 100%;line-height:normal}
-  .eb-search__box{border-radius:8px;display:flex;flex-wrap:wrap;font-family: Arial, Helvetica, sans-serif;font-size:1.25em}
-  .eb-search__input-bquery{background:#fff;border:1px solid #d82930;border-bottom-color:transparent;border-radius:.25em .25em 0 0;padding:.75em}
-  .eb-search__input-bquery:focus{color:#333}
-  .eb-search__submit-button{-webkit-appearance:button;background:#d82930;border:1px solid #d82930;border-radius:0 0 .25em .25em;box-shadow:0 2px 4px 0 rgba(0,0,0,.20);color:#FFFFFF;cursor:pointer;overflow:visible;padding:.5em 1.25em;text-align:center;white-space:nowrap}
+  .eb-search__box{border-radius:.25em;display:flex;flex-wrap:wrap;font-family: Arial, Helvetica, sans-serif;font-size:1.25em}
+  .eb-search__input-bquery{background:#fff;border:1px solid #480011;border-bottom-color:transparent;border-radius:.25em .25em 0 0;padding:.75em}
+  .eb-search__input-bquery:focus{color:#231e21}
+  .eb-search__submit-button{-webkit-appearance:button;background:#480011;border:1px solid #480011;border-radius:0 0 .25em .25em;box-shadow:0 2px 4px 0 rgba(0,0,0,.20);color:#FFFFFF;cursor:pointer;overflow:visible;padding:.5em 1.25em;text-align:center;white-space:nowrap}
   .eb-search__submit-text{display:inline-flex;font-family: Arial, Helvetica, sans-serif;overflow:hidden}
   .eb-filter-container{padding-bottom:0;font-family: Arial, Helvetica, sans-serif;}
   .eb-search__label{align-items:center;font-family: Arial, Helvetica, sans-serif;display:inline-flex;white-space:nowrap;width:100%}
@@ -19,14 +19,14 @@
   .eb-search__radio_label{padding-right:.5em;}
   .eb-search__span{padding:0 .5em}
   .eb-adv-search{padding-right:1em;font-family: Arial, Helvetica, sans-serif;text-align:right;white-space:nowrap}
-  .eb-adv-search a.eb-adv-search__link{color:#9047AA;font-family: Arial, Helvetica, sans-serif;font-weight: bold;text-decoration:none}
+  .eb-adv-search a.eb-adv-search__link{color:#a42b35;font-family: Arial, Helvetica, sans-serif;font-weight: bold;text-decoration:none}
   .eb-sr-only{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}
   .eb-search-container__has-select .eb-search__search-prefix{background-color:#fff;border-radius:.25em 0 0 .25em;margin-bottom:.75em;position:relative}
   .eb-search-container__has-select .eb-search__search-prefix:after,.eb-search__search-prefix:before{bottom:0;content:"";pointer-events:none;position:absolute;top:0}
   .eb-search-container__has-select .eb-search__search-prefix:before{right:0;width:1.75em}
-  .eb-search-container__has-select .eb-search__search-prefix:after{border-bottom:2px solid #000;border-right:2px solid #000;height:.5em;margin:auto;right:.75em;transform-origin:center right;transform:rotate(45deg);width:.5em;z-index:2}
-  .eb-search-container__has-select .eb-search__select{-webkit-appearance:none;appearance:none;background:#fff;border:1px solid #d82930;border-radius:.25em;box-shadow:none;color:#000;height:100%;padding:.5em 1.75em .5em .75em;width:100%}
-  .eb-search-container__has-select .eb-search__select:focus{color:#000}
+  .eb-search-container__has-select .eb-search__search-prefix:after{border-bottom:2px solid #231e21;border-right:2px solid #231e21;height:.5em;margin:auto;right:.75em;transform-origin:center right;transform:rotate(45deg);width:.5em;z-index:2}
+  .eb-search-container__has-select .eb-search__select{-webkit-appearance:none;appearance:none;background:#fff;border:1px solid #480011;border-radius:.25em;box-shadow:none;color:#231e21;height:100%;padding:.5em 1.75em .5em .75em;width:100%}
+  .eb-search-container__has-select .eb-search__select:focus{color:#231e21}
   .eb-search-container__has-select .eb-search__select::-ms-expand{display:none}
   html[dir="rtl"] .eb-search__select {padding: .5em .75em .5em 1.75em}
   html[dir="rtl"] .eb-search__search-prefix:before{left:0;right:inherit}
@@ -34,7 +34,7 @@
   @media only screen and (min-width: 768px) {
     .eb-search-container{padding:.75em}
     .eb-search__box{flex-wrap:nowrap;height:2.8em;box-shadow:0 2px 4px 0 rgba(0,0,0,.20)}
-    .eb-search__input-bquery{border-bottom-color:#d82930;border-radius:.25em 0 0 .25em;border-right-color:transparent;width:100%}
+    .eb-search__input-bquery{border-bottom-color:#480011;border-radius:.25em 0 0 .25em;border-right-color:transparent;width:100%}
     .eb-search__submit-button{border-radius:0 .25em .25em 0;box-shadow:none;flex:0 0 auto}
     .eb-filter-container{flex:1;padding-left:1em;padding-bottom:.75em}
     .eb-search__label{width:auto}
@@ -86,15 +86,15 @@
     <div class="eb-filter-container">
       <label class="eb-search__label" for="fullText">
         <input class="eb-search__input" id="fullText" name="limiter-ft" value="Y" type="checkbox" />
-        <span class="eb-search__span">Full Text Only</span>
+        <span class="eb-search__span">Full text only</span>
       </label>
       <label class="eb-search__label" for="peerReviewed">
         <input class="eb-search__input" id="peerReviewed" name="limiter-rv" value="Y" type="checkbox" />
-        <span class="eb-search__span">Peer Reviewed Only</span>
+        <span class="eb-search__span">Peer reviewed only</span>
       </label>
     </div>
     <div class="eb-adv-search">
-      <a class="eb-adv-search__link" href="https://searchbox.ebsco.com/search/?schemaId=search&authtype=sso&custid=s5071557&groupid=main&profid=eds&setup=1&scope=site&site=eds-live&direct=true" target="_blank"><b>Advanced Search</b></a>
+      <a class="eb-adv-search__link" href="https://searchbox.ebsco.com/search/?schemaId=search&authtype=sso&custid=s5071557&groupid=main&profid=eds&setup=1&scope=site&site=eds-live&direct=true" target="_blank"><b>Advanced search</b></a>
     </div>
   </div>
 </form>
